@@ -133,3 +133,16 @@ inputDecimal = (dot) =>{
         currentNumber += dot; 
     }
 }
+
+//persen
+
+const persenNumber = document.querySelector(".percentage");
+
+persenNumber.addEventListener("click", (event) =>{
+    inputPersen(event.target.value);
+    updateScreen(currentNumber);
+})
+
+inputPersen = () => {
+    currentNumber = currentNumber / 100;
+}
