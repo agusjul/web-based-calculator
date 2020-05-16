@@ -215,3 +215,26 @@ angkaakhir = () =>{
         currentNumber ='0';
     }
 }
+
+const changemode = document.querySelector(".iconchange");
+
+changemode.addEventListener("click",(event) =>{
+    
+    let a = document.getElementById("gantitema").href;
+    ubahtema(a);
+})
+
+ubahtema = (a) =>{
+    console.log(a);
+    if (a === "file:///E:/Sample%20Documents/Perkuliahan/Semester%204/Project%20Dicoding/Kalkulator/black.css"){
+        document.getElementById("gantitema").href = "stylesheet.css";
+        document.getElementById("logoikon").src = "./icon/moon.svg";
+        console.log("tema terang")
+    }
+    if (a === "file:///E:/Sample%20Documents/Perkuliahan/Semester%204/Project%20Dicoding/Kalkulator/stylesheet.css") {
+        document.getElementById("gantitema").href = "black.css";
+        document.getElementById("logoikon").src = "./icon/nature.svg";
+        console.log("tema gelap")
+    }
+
+}
