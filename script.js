@@ -226,12 +226,12 @@ changemode.addEventListener("click",(event) =>{
 
 ubahtema = (a) =>{
     console.log(a);
-    if (a === "file:///E:/Sample%20Documents/Perkuliahan/Semester%204/Project%20Dicoding/Kalkulator/black.css"){
+    if (a === "https://bsand8813.github.io/web-based-calculator/black.css"){
         document.getElementById("gantitema").href = "stylesheet.css";
         document.getElementById("logoikon").src = "./icon/moon.svg";
         console.log("tema terang")
     }
-    if (a === "file:///E:/Sample%20Documents/Perkuliahan/Semester%204/Project%20Dicoding/Kalkulator/stylesheet.css") {
+    if (a === "https://bsand8813.github.io/web-based-calculator/stylesheet.css") {
         document.getElementById("gantitema").href = "black.css";
         document.getElementById("logoikon").src = "./icon/nature.svg";
         console.log("tema gelap")
