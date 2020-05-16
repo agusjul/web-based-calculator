@@ -80,4 +80,5 @@ button:hover {
     box-shadow:  8px 8px 16px #c4c4c4, 
                 -8px -8px 16px #ffffff;
                 margin-bottom: 20px;
+    margin: 10px;
 }
