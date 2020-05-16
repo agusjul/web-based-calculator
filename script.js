@@ -216,25 +216,28 @@ angkaakhir = () =>{
     }
 }
 
+
+
+var bilangan = 1;
+
 const changemode = document.querySelector(".iconchange");
 
 changemode.addEventListener("click",(event) =>{
-    
-    let a = document.getElementById("gantitema").href;
-    ubahtema(a);
+    temaberganti();
 })
 
-ubahtema = (a) =>{
-    console.log(a);
-    if (a === "https://bsand8813.github.io/web-based-calculator/black.css"){
+function temaberganti(){
+    console.log(bilangan);
+    if (bilangan === 1){
         document.getElementById("gantitema").href = "stylesheet.css";
         document.getElementById("logoikon").src = "./icon/moon.svg";
-        console.log("tema terang")
+        bilangan = 0;
+        console.log(bilangan);
     }
-    if (a === "https://bsand8813.github.io/web-based-calculator/stylesheet.css") {
+    else if(bilangan === 0){
         document.getElementById("gantitema").href = "black.css";
         document.getElementById("logoikon").src = "./icon/nature.svg";
-        console.log("tema gelap")
-    }
-
+        bilangan = 1;
+        console.log(bilangan);
+    }  
 }
