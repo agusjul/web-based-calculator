@@ -190,3 +190,28 @@ persenNumber.addEventListener("click", (event) =>{
 inputPersen = () => {
     currentNumber = currentNumber / 100;
 }
+
+const deletebutton = document.querySelector(".delete");
+
+deletebutton.addEventListener("click",(event) =>{
+    inputdelete(event.target.value);
+})
+
+inputdelete = () =>{
+    var a = currentNumber;
+    currentNumber = a.substring(0, a.length -1);
+    angkaakhir();
+    updateScreen(currentNumber);
+    if(operation.length < 1){
+        updateoperationScreen(currentNumber);
+    }
+    else{
+        updateoperationScreen(`${prevNumber} ${calculationOperator} ${currentNumber}`);
+    }
+}
+
+angkaakhir = () =>{
+    if (currentNumber.length <1 ){
+        currentNumber ='0';
+    }
+}
